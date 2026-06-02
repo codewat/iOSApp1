@@ -5,22 +5,23 @@
 //  Created by Cemar on 2026-06-01.
 //
 
-
 import Foundation
 import SwiftData
 
 @Model
 class CartItem {
-    @Attribute(.unique) var id: String // Unique string ID para sa database row
+    // Unique string ID for each database row entry
+    @Attribute(.unique) var id: String
     
-    // Tungod kay dili pa dali i-save ang custom Struct directly sa SwiftData,
-    // atong bungkagon ang mga attributes sa kape nga gi-order dire sa CartItem.
+    // Since SwiftData cannot easily save a custom Struct directly,
+    // we break down the Coffee object properties into separate variables here.
     var coffeeId: String
     var coffeeName: String
     var coffeePrice: Double
     var coffeeImage: String
     var quantity: Int
     
+    // Initializer to create a new cart item using a Coffee object and a quantity
     init(id: String = UUID().uuidString, coffee: Coffee, quantity: Int) {
         self.id = id
         self.coffeeId = coffee.id

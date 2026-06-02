@@ -1,8 +1,27 @@
-//
-//  coffeeData.json
-//  TimHortonsApp
-//
-//  Created by Cemar on 2026-06-01.
-//
+[
+    {
+        "id": "1",
+        "name" : "Espresso",
+        "description": "Very Strong and bold coffee, perfect for a quick energy boost.",
+        "price" : 2.99,
+        "image" : "coffee",
+        "category": "Hot"
+    },
+    {
+        "id": "2",
+        "name" : "Latte",
+        "description": "A smooth blend of espresso and steamed milk, topped with a light layer of foam.",
+        "price" : 3.49,
+        "image" : "coffee2",
+        "category": "Hot"
+    },
+    {
+        "id": "3",
+        "name" : "Ice Coffee",
+        "description": "Chilled premium coffee blend served over ice, creamy and refreshing.",
+        "price" : 3.99,
+        "image" : "coffee3",
+        "category": "Cold"
+    }
+]
 
-import Foundation
